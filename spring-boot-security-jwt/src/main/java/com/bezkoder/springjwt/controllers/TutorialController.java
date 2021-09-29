@@ -33,7 +33,7 @@ public class TutorialController {
 	TutorialRepository tutorialRepository;
 	
 	@GetMapping("/tutorials")
-	@PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
+//	@PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
 	public ResponseEntity<List<Tutorial>> getAllTutorials(@RequestParam(required = false) String title) {
 		
 		try {
